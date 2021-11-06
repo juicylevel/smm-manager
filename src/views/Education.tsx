@@ -8,21 +8,20 @@ const Education = () => (
             <Typography variant="h2" textAlign="center">
                 Никогда не перестаю учиться
             </Typography>
-
-            <Paper component={Stack} square elevation={5}>
-                <a
-                    href="https://smmacademiya.ru"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+            <a
+                href="https://smmacademiya.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Paper component={Stack} square elevation={5}>
                     <Image
                         src="/certificate.jpeg"
                         alt="Сертификат SMM продвижение"
                         width="1600"
                         height="1131"
                     />
-                </a>
-            </Paper>
+                </Paper>
+            </a>
         </Stack>
     </Section>
 );
