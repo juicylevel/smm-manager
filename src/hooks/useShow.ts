@@ -7,10 +7,7 @@ const useShow = (defaultShow = false): Props => {
 
     const onShow = useCallback(() => setShow(true), []);
     const onClose = useCallback(() => setShow(false), []);
-    const onToggle = useCallback(
-        () => setShow((prevShow) => !prevShow),
-        [show]
-    );
+    const onToggle = useCallback(() => setShow((prevShow) => !prevShow), []);
 
     return [show, onShow, onClose, onToggle];
 };
