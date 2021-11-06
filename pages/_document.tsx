@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { createEmotionCache, theme } from 'material';
 
+// https://github.com/mui-org/material-ui/tree/master/examples/nextjs-with-typescript
 export default class MyDocument extends Document {
     render() {
         return (
@@ -31,7 +32,7 @@ export default class MyDocument extends Document {
                         sizes="16x16"
                         href="/favicon-16x16.png?1"
                     />
-                    <link rel="manifest" href="/site.webmanifest"></link>
+                    <link rel="manifest" href="/site.webmanifest" />
                     <link
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
