@@ -38,7 +38,11 @@ const Drawer: React.FC<DrawerProps> = ({
                     justifyContent="flex-end"
                     padding="16px 24px"
                 >
-                    <IconButton size="small" onClick={handleClose}>
+                    <IconButton
+                        color="primary"
+                        size="small"
+                        onClick={handleClose}
+                    >
                         <Close />
                     </IconButton>
                 </Stack>

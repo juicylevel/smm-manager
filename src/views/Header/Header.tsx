@@ -13,7 +13,11 @@ const Header = () => {
         >
             <Stack>
                 <Toolbar sx={{ alignSelf: 'flex-end' }}>
-                    <IconButton size="large" onClick={onShowMenu}>
+                    <IconButton
+                        color="primary"
+                        size="large"
+                        onClick={onShowMenu}
+                    >
                         <MenuIcon fontSize="large" />
                     </IconButton>
                 </Toolbar>

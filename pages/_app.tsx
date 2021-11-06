@@ -6,6 +6,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import { EmotionCache } from '@emotion/utils';
 import { createEmotionCache, theme } from 'material';
+import { ScrollToTop } from 'components';
+import { Fab } from '@mui/material';
+import { KeyboardArrowUp } from '@mui/icons-material';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -33,6 +36,11 @@ const MyApp: React.FC<MyAppProps> = (props) => {
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <Component {...pageProps} />
+                <ScrollToTop>
+                    <Fab color="primary" size="small">
+                        <KeyboardArrowUp />
+                    </Fab>
+                </ScrollToTop>
             </ThemeProvider>
         </CacheProvider>
     );
