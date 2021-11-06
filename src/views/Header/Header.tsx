@@ -6,11 +6,7 @@ import { Drawer } from 'components';
 const Header = () => {
     const [showMenu, onShowMenu, onCloseMenu] = useShow();
     return (
-        <AppBar
-            position="fixed"
-            elevation={0}
-            sx={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}
-        >
+        <AppBar position="fixed" elevation={0} color="transparent">
             <Stack>
                 <Toolbar sx={{ alignSelf: 'flex-end' }}>
                     <IconButton
