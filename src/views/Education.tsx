@@ -10,12 +10,18 @@ const Education = () => (
             </Typography>
 
             <Paper component={Stack} square elevation={5}>
-                <Image
-                    src="/certificate.jpeg"
-                    alt="Сертификат SMM продвижение"
-                    width="1600"
-                    height="1131"
-                />
+                <a
+                    href="https://smmacademiya.ru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Image
+                        src="/certificate.jpeg"
+                        alt="Сертификат SMM продвижение"
+                        width="1600"
+                        height="1131"
+                    />
+                </a>
             </Paper>
         </Stack>
     </Section>
