@@ -1,18 +1,18 @@
-import { Box } from '@mui/system';
+import { Box, BoxProps } from '@mui/system';
 
-const Section: React.FC = ({ children }) => {
+const Section: React.FC<BoxProps> = ({ sx, ...rest }) => {
     return (
         <Box
             component="section"
             sx={{
-                height: '100vh',
+                padding: '80px 0',
                 '&:not(:last-child)': {
                     borderBottom: '1px solid black',
                 },
+                ...sx,
             }}
-        >
-            {children}
-        </Box>
+            {...rest}
+        />
     );
 };
 
