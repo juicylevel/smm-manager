@@ -7,7 +7,7 @@ const Footer = () => (
         component="footer"
         direction="row"
         justifyContent="center"
-        padding="50px 0"
+        padding="31px 0"
     >
         {'©'} {currentYear} forestammmp design
     </Stack>
