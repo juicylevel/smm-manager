@@ -3,7 +3,7 @@ import { Paper, Stack, Typography } from '@mui/material';
 import { Section } from 'components';
 
 const Education = () => (
-    <Section>
+    <Section id="education">
         <Stack direction="column" spacing={10}>
             <Typography variant="h2" textAlign="center">
                 Никогда не перестаю учиться

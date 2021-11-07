@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import { Section } from 'components';
 
 const Intro = () => (
-    <Section sx={{ height: '100vh' }}>
+    <Section id="intro" sx={{ height: '100vh' }}>
         <Grid container alignItems="center" height="100%">
             <Grid item container spacing={10}>
                 <Grid item>

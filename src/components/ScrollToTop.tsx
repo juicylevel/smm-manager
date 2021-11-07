@@ -1,5 +1,6 @@
 import { useScrollTrigger, Box, Zoom } from '@mui/material';
 import { useCallback } from 'react';
+import { elementScrollIntoView } from 'seamless-scroll-polyfill';
 
 const ScrollToTop: React.FC = ({ children }) => {
     const trigger = useScrollTrigger({
@@ -9,9 +10,9 @@ const ScrollToTop: React.FC = ({ children }) => {
     });
 
     const handleClick = useCallback(() => {
-        const anchor = document.documentElement;
+        const anchor = document.getElementById('intro');
         if (anchor) {
-            anchor.scrollIntoView({
+            elementScrollIntoView(anchor, {
                 behavior: 'smooth',
                 block: 'start',
             });

@@ -46,9 +46,7 @@ const Drawer: React.FC<DrawerProps> = ({
                         <Close />
                     </IconButton>
                 </Stack>
-                <Box padding="24px" height="100%">
-                    {children}
-                </Box>
+                <Box height="100%">{children}</Box>
             </Stack>
         </MuiDrawer>
     );

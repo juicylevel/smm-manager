@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import { Bullet, Section } from 'components';
 
 const Skills = () => (
-    <Section>
+    <Section id="skills">
         <Grid container spacing={10}>
             <Grid item>
                 <Typography variant="h2">Что я умею</Typography>
